@@ -1,0 +1,44 @@
+:root {
+  font-family: Inter, 'Segoe UI', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #192438;
+  background: #f5f7fb;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+
+  --ink: #192438;
+  --muted: #8b95a7;
+  --line: #edf0f5;
+  --surface: #ffffff;
+  --canvas: #f5f7fb;
+  --navy: #14223b;
+  --navy-deep: #101c31;
+  --green: #219a76;
+  --red: #df6d76;
+  --violet: #8c6df2;
+  --shadow: 0 10px 32px rgba(25, 43, 73, 0.045), 0 1px 3px rgba(25, 43, 73, 0.035);
+}
+
+* { box-sizing: border-box; }
+
+html { min-width: 320px; min-height: 100%; scroll-behavior: smooth; }
+
+body { margin: 0; min-width: 320px; min-height: 100vh; }
+
+button, input, select { font: inherit; }
+button { color: inherit; }
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 3px solid rgba(79, 140, 255, 0.35);
+  outline-offset: 2px;
+}
+
+::selection { background: rgba(79, 140, 255, 0.18); }
+
+#root { min-height: 100vh; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+}
